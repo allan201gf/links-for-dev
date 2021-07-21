@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links For Dev</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <aside class="menu">
+        <div class="menu-content">
+            <h1>Links For Dev</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>   
+
+    <section class="section">
+        <div class="main-content">
+
+            <div id="" class="itens">
+                <h2 class="categoria">Adicionar novo item</h2>
+
+                <div class="form-content">
+                    <form method="POST" action="/salvarpergunta" class="formulario">
+                        <br><br>
+                        <label for="">Nome</label>
+                        <br>
+                        <input type="text" placeholder="Título" name="name" id="name">
+                        <br>
+                        <label for="">Descrição</label>
+                        <br>
+                        <textarea type="text" placeholder="Descrição" name="description"></textarea>
+                        <br>
+                        <label for="">Link</label>
+                        <br>
+                        <input type="text" placeholder="link" name="link">
+                        <br>
+                        <label for="">Categoria</label>
+                        <br>
+                        <select name="category">
+                            <option value="imagens">Imagens</option>
+                            <option value="icones">Icones</option>
+                            <option value="cores">Cores</option>
+                            <option value="codigos">Códigos</option>
+                            <option value="formularios">Formulários</option>
+                        </select>
+                        <br>
+                        <button>Enviar</button>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <% if  (failed == true) { %>
+        <script>alert("Favor preencher todos os campos")</script>
+                <% } %>
+
+            <canvas class="background"></canvas>
+            <script src="js/particles.js"></script>
+            <script src="js/scripts.js"></script>
+</body>
+
+</html>

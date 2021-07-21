@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links For Dev</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <aside class="menu">
+        <div class="menu-content">
+            <h1>Links For Dev</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#imagens">Imagens</a></li>
+                    <li><a href="#icones">Icones</a></li>
+                    <li><a href="#cores">Cores</a></li>
+                    <li><a href="#formularios">Formulários</a></li>
+                    <li><a href="#codigos">Códigos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="intro" class="menu-spacing"></div>
+
+    <section class="section">
+        <div class="main-content">
+
+
+            <div id="imagens" class="itens">
+                <h2 class="categoria">Imagens</h2>
+                <div class="grid">
+                    <% for(let i=0; i < link.length; i++) { %>
+                        <% if (link[i].category=="imagens" ) { %>
+                            <div class="item">
+                                <h3><a href="<%= link[i].link %>">
+                                        <%= link[i].name %>
+                                    </a></h3>
+                                <p>
+                                    <%= link[i].description %>
+                                </p>
+
+                                <div class="div-button-delete">
+                                    <p></p>
+
+                                </div>
+                                <form method="POST" action="/delete:<%= link[i].id %>" class="button-delete">
+                                    <button>Apagar</button>
+                                </form>
+                            </div>
+                            <% } %>
+                                <% } %>
+                </div>
+            </div>
+
+            <div id="icones" class="itens">
+                <h2 class="categoria">Icones</h2>
+                <div class="grid">
+                    <% for(let i=0; i < link.length; i++) { %>
+                        <% if (link[i].category=="icones" ) { %>
+                            <div class="item">
+                                <h3><a href="<%= link[i].link %>">
+                                        <%= link[i].name %>
+                                    </a></h3>
+                                <p>
+                                    <%= link[i].description %>
+                                </p>
+
+                                <div class="div-button-delete">
+                                    <p></p>
+                                </div>
+                                <form method="POST" action="/delete:<%= link[i].id %>" class="button-delete">
+                                    <button>Apagar</button>
+                                </form>
+                            </div>
+                            <% } %>
+                                <% } %>
+                </div>
+            </div>
+
+            <div id="cores" class="itens">
+                <h2 class="categoria">Cores</h2>
+                <div class="grid">
+                    <% for(let i=0; i < link.length; i++) { %>
+                        <% if (link[i].category=="cores" ) { %>
+                            <div class="item">
+                                <h3><a href="<%= link[i].link %>">
+                                        <%= link[i].name %>
+                                    </a></h3>
+                                <p>
+                                    <%= link[i].description %>
+                                </p>
+
+                                <div class="div-button-delete">
+                                    <p></p>
+                                </div>
+                                <form method="POST" action="/delete:<%= link[i].id %>" class="button-delete">
+                                    <button>Apagar</button>
+                                </form>
+                            </div>
+                            <% } %>
+                                <% } %>
+                </div>
+            </div>
+
+            <div id="formularios" class="itens">
+                <h2 class="categoria">Formulários</h2>
+                <div class="grid">
+                    <% for(let i=0; i < link.length; i++) { %>
+                        <% if (link[i].category=="formularios" ) { %>
+                            <div class="item">
+                                <h3><a href="<%= link[i].link %>">
+                                        <%= link[i].name %>
+                                    </a></h3>
+                                <p>
+                                    <%= link[i].description %>
+                                </p>
+
+                                <div class="div-button-delete">
+                                    <p></p>
+                                </div>
+                                <form method="POST" action="/delete:<%= link[i].id %>" class="button-delete">
+                                    <button>Apagar</button>
+                                </form>
+                            </div>
+                            <% } %>
+                                <% } %>
+                </div>
+            </div>
+
+            <div id="codigos" class="itens">
+                <h2 class="categoria">Códigos</h2>
+                <div class="grid">
+                    <% for(let i=0; i < link.length; i++) { %>
+                        <% if (link[i].category=="codigos" ) { %>
+                            <div class="item">
+                                <h3><a href="<%= link[i].link %>">
+                                        <%= link[i].name %>
+                                    </a></h3>
+                                <p>
+                                    <%= link[i].description %>
+                                </p>
+
+                                <div class="div-button-delete">
+                                    <p></p>
+                                </div>
+                                <form method="POST" action="/delete:<%= link[i].id %>" class="button-delete">
+                                    <button>Apagar</button>
+                                </form>
+                            </div>
+                            <% } %>
+                                <% } %>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="categoria">
+            <a href="/adicionar"><button class="button-l">Adicionar novo item</button></a>
+        </div>
+
+        </div>
+    </section>
+
+
+<%#    <canvas class="background"></canvas>
+    <script src="js/particles.js"></script>
+    <script src="js/scripts.js"></script>
+     %> 
+</body>
+
+</html>

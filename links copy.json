@@ -1,0 +1,44 @@
+{
+    "cores": [
+        {
+            "name": "CLIPLY",
+            "description": "Gifs gratis para usar em sites",
+            "link": "https://cliply.co/clips/"
+        },
+        {
+            "name": "FLAT UI COLORS",
+            "description": "Palheta de cores prontas, este site foi baseado em uma oalheta de cores do Flat Ui Colors",
+            "link": "https://flatuicolors.com/"
+        }
+    ],
+    "imagens": [
+        {
+            "name": "UNDRAW",
+            "description": "SVG's gratuitos para serem usadas em projetos, garanto que você ja viu alguma imagem deste site em algum projeto.",
+            "link": "https://undraw.co/"
+        },
+        {
+            "name": "FREEPIK",
+            "description": "Vetores, PSD e Fotos grátis (alguns recursos são pagos)",
+            "link": "https://br.freepik.com/"
+        },
+        {
+            "name": "MAGDELEINE",
+            "description": "Fotos grátis em alta resolução com palheta de cores",
+            "link": "https://magdeleine.co/browse/"
+        }
+    ],
+    "icones": [
+        {
+            "name": "ICONSHOCK",
+            "description": "Pacotes de ícones gratuitos.",
+            "link": "https://www.iconshock.com/"
+        },
+        {
+            "name": "BOXICONS",
+            "description": "Ícones gratuítos em SVG ou WEB Component",
+            "link": "https://boxicons.com/"
+        }
+    ]
+    
+}
