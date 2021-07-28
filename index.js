@@ -108,8 +108,9 @@ server.get("/redirectdelete", (req, res) => {
 
 server.use(router)
 
+var porta = process.env.PORT || 8080;
 
 // Inicia o servidor
-server.listen(80, () => {
+server.listen(porta, () => {
     console.log("Server started successfully")
 })
